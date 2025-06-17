@@ -24,19 +24,20 @@ Track: Cloud Engineering
 - Created and downloaded the key-pair file.
 - Set Security Group (Inbound and Outbound Rules):
   - HTTP (80), HTTPS (443), SSH (22) open to `0.0.0.0/0`
-  - Connected and SSH'd into the instance using 
+  - Connected and SSH'd into the instance using the public key.
 
-### 2. Installed Required Software and Dependencies
+### 2. Installed Required Software and Dependencies (Node, Nginx, Git, and npm)
 `sudo apt update
 sudo apt install nginx nodejs npm git -y`
 
 ### 3. Created a directory to set up my Node.js project
 `mkdir tinyuka-exam && cd $_`
 - Created server.js and added code to run a node server on port 3000,
-- Created david.html and added the necessary html,
+- Created david.html and added the necessary html (used ChatGPT for speed, then modified generated content),
+- Added Tailwind for styling,
 - Ran the `nohup node server.js &` command to start the node server in the background
 
-### 4. Set up Nginx as reverse Proxy
+### 4. Set up Nginx as a reverse proxy
 - Navigated to "/etc/nginx/sites-available/default" and replaced the "location" section with the following lines:
 `location / {
         proxy_pass http://localhost:3000;
@@ -57,3 +58,4 @@ sudo apt install nginx nodejs npm git -y`
 - Pushed to GitHub using `git push origin main`
 - Added README.md
 - Created a PR
+- Modified david.html
