@@ -57,3 +57,4 @@ sudo apt install nginx nodejs npm git -y`
 - Pushed to GitHub using `git push origin main`
 - Added README.md
 - Created a PR
+- Updated README.md to include screenshot and .ico file
