@@ -59,3 +59,4 @@ sudo apt install nginx nodejs npm git -y`
 - Added README.md
 - Created a PR
 - Modified david.html
+- Updated README.md to include screenshot and .ico file
